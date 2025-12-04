@@ -1,11 +1,15 @@
 .logo {
-    width: 50px; /* ou la taille que tu veux */
+    width: 10px; 
     display: block;
-    margin: 20px auto; /* centrer horizontalement */
+    margin: 20px auto; 
 }
-/* styles.desktop.css et styles.mobile.css peuvent être identiques au départ pour simplicité */
+body > img {
+    width: 250px; 
+    height: auto; 
+    display: block;
+    margin: 20px auto; 
+}
 
-/* Réinitialisation de base */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body */
 body {
     background-color: #f5f5f5;
     display: flex;
@@ -24,19 +27,19 @@ body {
     padding: 20px;
 }
 
-/* Logo */
+
 .logo {
     width: 150px;
     margin-bottom: 20px;
 }
 
-/* Titre */
+
 h2 {
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Formulaire */
+
 form {
     background-color: #fff;
     padding: 20px 30px;
@@ -48,7 +51,7 @@ form {
     width: 300px;
 }
 
-/* Inputs */
+
 input[type="text"],
 input[type="password"] {
     padding: 10px;
@@ -57,7 +60,6 @@ input[type="password"] {
     font-size: 14px;
 }
 
-/* Bouton */
 button {
     padding: 10px;
     background-color: #007bff;
@@ -73,7 +75,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Lien de création de compte */
+
 .actions a {
     text-decoration: none;
     color: #007bff;
@@ -86,13 +88,4 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Mobile responsive (optionnel si tu veux ajuster) */
-@media screen and (max-width: 767px) {
-    form {
-        width: 90%;
-        padding: 15px;
-    }
-    .logo {
-        width: 120px;
-    }
-}
+
