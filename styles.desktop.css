@@ -1,0 +1,98 @@
+.logo {
+    width: 50px; /* ou la taille que tu veux */
+    display: block;
+    margin: 20px auto; /* centrer horizontalement */
+}
+/* styles.desktop.css et styles.mobile.css peuvent être identiques au départ pour simplicité */
+
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Titre */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Formulaire */
+form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Bouton */
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lien de création de compte */
+.actions a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive (optionnel si tu veux ajuster) */
+@media screen and (max-width: 767px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+    .logo {
+        width: 120px;
+    }
+}
